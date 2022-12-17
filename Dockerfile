@@ -1,8 +1,8 @@
-ARG ALPINE_VERSION=3.12
+ARG ALPINE_VERSION=3.14
 
-FROM mirror.gcr.io/library/alpine:$ALPINE_VERSION
+FROM r.sync.pw/dockerhub/library/alpine:$ALPINE_VERSION
 
-ARG S6_VERSION=v2.1.0.2
+ARG S6_VERSION=v2.2.0.3
 ARG S6_ARCH=amd64
 
 ENV S6_OVERLAY_URL=https://github.com/just-containers/s6-overlay/releases/download/${S6_VERSION}/s6-overlay-${S6_ARCH}.tar.gz
